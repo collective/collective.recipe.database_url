@@ -9,11 +9,13 @@ setup(
     classifiers=[],
     description='',
     entry_points={
+        'zc.buildout': 'default=collective.recipe.database_url:Recipe',
     },
     keywords='',
     include_package_data=True,
     install_requires=[
         'dj-database-url',
+        'setuptools',
     ],
     long_description=open('README.rst').read() + '\n' + open('CHANGES.rst').read(),
     name='collective.recipe.database_url',
