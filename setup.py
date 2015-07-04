@@ -16,8 +16,10 @@ setup(
         'dj-database-url',
     ],
     long_description=open('README.rst').read() + '\n' + open('CHANGES.rst').read(),
-    name='',
+    name='collective.recipe.database_url',
     namespace_packages=[
+        'collective',
+        'collective.recipe',
     ],
     packages=find_packages(),
     url='',
