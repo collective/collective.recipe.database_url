@@ -9,11 +9,16 @@ ENGINES = {
 
 
 class Recipe(object):
-    """
+    """A Buildout Recipe.
     """
 
     def __init__(self, buildout, name, options):
         """
+        Assign parsed options to section parameters; 
+        facilitates reference from other sections e.g.
+        [plone]
+        rel-storage =
+            dbname ${database_url:name}
         """
 
         parsed_options = dj_database_url.parse(
@@ -29,5 +34,6 @@ class Recipe(object):
 
     def install(self):
         """
+        N/A
         """
         return tuple()
