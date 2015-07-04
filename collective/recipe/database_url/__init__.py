@@ -15,7 +15,7 @@ class Recipe(object):
     def __init__(self, buildout, name, options):
         """
         Assign parsed options to section parameters; 
-        facilitates reference from other sections e.g.
+        facilitate reference from other sections e.g.
         [plone]
         rel-storage =
             dbname ${database_url:name}
