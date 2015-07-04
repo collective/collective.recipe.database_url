@@ -1,7 +1,7 @@
 collective.recipe.database_url
 ==============================
 
-Use dj-database-url to parse DATABASE_URL for Buildout environments
+Use `dj-database-url <https://github.com/kennethreitz/dj-database-url>`_ to parse DATABASE_URL for Buildout environments
 
 ::
 
