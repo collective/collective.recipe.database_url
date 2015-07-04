@@ -12,6 +12,7 @@ setup(
         'zc.buildout': 'default=collective.recipe.database_url:Recipe',
     },
     keywords='',
+    license='Whatever Plone is',
     include_package_data=True,
     install_requires=[
         'dj-database-url',
